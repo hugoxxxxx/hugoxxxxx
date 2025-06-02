@@ -1,0 +1,7 @@
+# 屏蔽中国银行 App 开屏广告等请求
+DOMAIN-SUFFIX,mbs.boc.cn,REJECT
+DOMAIN-SUFFIX,ebsnew.boc.cn,REJECT
+DOMAIN-KEYWORD,iisp,REJECT
+DOMAIN-KEYWORD,oidea,REJECT
+URL-REGEX,^https:\/\/iisp.*boc\.cn\/.*,REJECT
+URL-REGEX,^https:\/\/cdn1\.ebsnew\.boc\.cn\/.*appGlobalConfig\.json,REJECT
